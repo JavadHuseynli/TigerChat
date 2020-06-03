@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Tiger</string>
+    <string name="lang">Language</string>
+    <string name="mute">Mute</string>
+    <string name="clear">Clear</string>
+    <string name="Block">Block</string>
+    <string name="about">About</string>
+
+</resources>

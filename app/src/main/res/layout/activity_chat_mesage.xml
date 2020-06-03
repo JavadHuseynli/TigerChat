@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatMesageActivity">
+
+    <ImageButton
+        android:id="@+id/emoji_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@null"
+        android:padding="4dp"
+        android:src="@drawable/ic_sentiment_satisfied_black_24dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="552dp"
+        />
+
+    <ImageButton
+        android:id="@+id/send_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:padding="4dp"
+        android:src="@drawable/ic_send_red_900_24dp"
+        tools:layout_editor_absoluteX="344dp"
+        tools:layout_editor_absoluteY="551dp"
+        />
+
+    <EditText
+        android:id="@+id/edt_content"
+        android:layout_width="303dp"
+        android:layout_height="41dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/send_button"
+        android:layout_toRightOf="@id/emoji_button"
+        android:textColorHint="#ffffff"
+        app:layout_constraintStart_toEndOf="@+id/emoji_button"
+
+        tools:layout_editor_absoluteY="552dp" />
+
+    <ListView
+        android:id="@+id/list_of_message"
+        android:layout_width="382dp"
+        android:layout_height="505dp"
+        android:layout_above="@+id/emoji_button"
+        android:layout_alignParentStart="true"
+        android:dividerHeight="@null"
+        android:stackFromBottom="true"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="1dp">
+
+    </ListView>
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/toolbar2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:background="?attr/colorPrimary"-->
+        <!--android:minHeight="?attr/actionBarSize"-->
+        <!--android:theme="?attr/actionBarTheme" />-->
+
+
+</RelativeLayout>
